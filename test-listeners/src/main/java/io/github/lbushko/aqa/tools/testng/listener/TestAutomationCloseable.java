@@ -1,4 +1,4 @@
-package com.lbushko.aqa.tools.testng.listener;
+package io.github.lbushko.aqa.tools.testng.listener;
 
 /**
  * Test resources that should be cleaned need to implement this interface TestAutomationCloseable

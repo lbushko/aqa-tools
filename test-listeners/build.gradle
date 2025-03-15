@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.module.convetions)
 }
 
-group = 'com.lbushko.aqa.tools'
+group = 'io.github.lbushko.aqa.tools'
 version = '1.0-SNAPSHOT'
 
 dependencies {

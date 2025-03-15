@@ -1,4 +1,4 @@
-package com.lbushko.aqa.tools.testng.listener;
+package io.github.lbushko.aqa.tools.testng.listener;
 
 import lombok.extern.slf4j.Slf4j;
 import org.testng.IClassListener;

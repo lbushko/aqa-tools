@@ -1,4 +1,4 @@
-package com.lbushko.aqa.tools.testng.listener;
+package io.github.lbushko.aqa.tools.testng.listener;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
