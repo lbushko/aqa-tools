@@ -5,7 +5,6 @@ plugins {
 
 group = 'com.lbushko.aqa.tools'
 version = '1.0-SNAPSHOT'
-description = "description"
 
 dependencies {
     implementation(libs.testng)
