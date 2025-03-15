@@ -1,0 +1,12 @@
+plugins {
+    alias(libs.plugins.lombok)
+    alias(libs.plugins.module.convetions)
+}
+
+group = 'com.lbushko.aqa.tools'
+version = '1.0-SNAPSHOT'
+description = "description"
+
+dependencies {
+    implementation(libs.testng)
+}

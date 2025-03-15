@@ -1,0 +1,51 @@
+plugins {
+    id "java"
+    id "maven-publish"
+    id "java-library"
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+publishing {
+    publications {
+        "$project.name"(MavenPublication) {
+            artifactId = project.name
+            from components.java
+            versionMapping {
+                usage('java-api') {
+                    fromResolutionOf('runtimeClasspath')
+                }
+                usage('java-runtime') {
+                    fromResolutionResult()
+                }
+            }
+            pom {
+                name = "AQA Tools"
+                description = "Advanced AQA Tools, Utils, Annotations"
+                url = 'https://github.com/lbushko/aqa-tools'
+                developers {
+                    developer {
+                        id = 'lbushko'
+                        name = 'Lyubomyr Bushko'
+                        email = 'lybomur.bushko@gmail.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:https://github.com/lbushko/aqa-tools.git'
+                    developerConnection = 'scm:git@github.com:lbushko/aqa-tools.git'
+                    url = 'https://github.com/lbushko/aqa-tools'
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            def releasesRepoUrl = layout.buildDirectory.dir('repos/releases')
+            def snapshotsRepoUrl = layout.buildDirectory.dir('repos/snapshots')
+            url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+        }
+    }
+}
