@@ -39,6 +39,15 @@ Tools for building Advanced Test Automation Frameworks
 
 ## Adding dependencies
 
+### Maven configuration
+```xml
+<dependency>
+    <groupId>io.github.lbushko.aqa.tools</groupId>
+    <artifactId>test-listeners</artifactId>
+    <version>0.1.0</version>
+</dependency>
+```
+
 ## Usage
 
 ### TestNg [CleanUpListener](https://github.com/lbushko/aqa-tools/blob/main/test-listeners/src/main/java/io/github/lbushko/aqa/tools/testng/listener/CleanUpListener.java) 
