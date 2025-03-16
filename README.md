@@ -13,7 +13,7 @@ Tools for building Advanced Test Automation Frameworks
 
 - [Table of Contents](#table-of-contents)
 - [Release notes](#release-notes)
-  - [1.0.0](#100)
+  - [0.1.0](#010)
 - [Modules](#modules)
 - [Prerequisites](#prerequisites)
 - [Adding dependencies](#adding-dependencies)
@@ -22,7 +22,7 @@ Tools for building Advanced Test Automation Frameworks
 
 ## Release notes
 
-### 1.0.0
+### 0.1.0
 
 - **CleanUpListener**: Custom TestNg Listener to automatically invoke clean-up method for test resorces
 
