@@ -8,8 +8,16 @@ import java.lang.reflect.Field;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ *  Custom TestNg CleanUpListener that invokes clean-up method automatically in @AfterClass
+ */
 @Slf4j
 public class CleanUpListener implements IClassListener {
+
+    /**
+     * Custom TestNg CleanUpListener that invokes clean-up method automatically in @AfterClass
+     */
+    public CleanUpListener() {}
 
     @SuppressWarnings("deprecation")
     @Override
@@ -63,11 +71,19 @@ public class CleanUpListener implements IClassListener {
         log.error(String.format("Failed to CleanUp resource: %s", aggregatedMsg));
     }
 
+    /**
+     * CleanupException - if fails to clean-up test resource
+     */
     public static class CleanupException extends RuntimeException {
 
         private static final String ERROR_MSG = "%s %s field with @CleanUp annotation does not implement " +
                 "TestAutomationCloseable";
 
+        /**
+         * CleanupException - if fails to clean-up test resource
+         *
+         * @param field - test resource for which failed clean-up
+         */
         public CleanupException(Field field) {
             super(String.format(ERROR_MSG, field.getType(), field.getName()));
             log.error(String.format(ERROR_MSG, field.getType(), field.getName()));
