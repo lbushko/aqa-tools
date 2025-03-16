@@ -12,15 +12,17 @@ Tools for building Advanced Test Automation Frameworks
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Release notes (1.0.0)](#release-notes-(1.0.0))
+- [Release notes](#release-notes)
+  - [1.0.0](#100)
 - [Modules](#modules)
 - [Prerequisites](#prerequisites)
 - [Adding dependencies](#adding-dependencies)
 - [Usage](#usage)
-- [TestNg CleanUpListener](#testNg-CleanUpListener)
 - [Contributing](#contributing)
 
-## Release notes (1.0.0)
+## Release notes
+
+### 1.0.0
 
 - **CleanUpListener**: Custom TestNg Listener to automatically invoke clean-up method for test resorces
 
@@ -37,7 +39,7 @@ Tools for building Advanced Test Automation Frameworks
 
 ## Usage
 
-### TestNg CleanUpListener ([link](https://github.com/lbushko/aqa-tools/blob/main/test-listeners/src/main/java/io/github/lbushko/aqa/tools/testng/listener/CleanUpListener.java))
+### TestNg [CleanUpListener](https://github.com/lbushko/aqa-tools/blob/main/test-listeners/src/main/java/io/github/lbushko/aqa/tools/testng/listener/CleanUpListener.java) 
 
 1. Configure TestNg to use CleanUpListener
 ```groovy
