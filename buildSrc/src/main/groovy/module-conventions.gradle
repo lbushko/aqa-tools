@@ -62,6 +62,7 @@ publishing {
 }
 
 jreleaser {
+    gitRootSearch = true
     signing {
         active = 'ALWAYS'
         armored = true
