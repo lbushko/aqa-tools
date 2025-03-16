@@ -48,7 +48,7 @@ Tools for building Advanced Test Automation Frameworks
 test {
     systemProperties System.properties
     useTestNG { TestNGOptions options ->
-    options.listeners << "com.lbushko.aqa.tools.testng.listener.CleanUpListener"
+    options.listeners << "io.github.lbushko.aqa.tools.testng.listener.CleanUpListener"
     }
 }
 ```
