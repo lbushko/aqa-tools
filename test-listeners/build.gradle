@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.lombok)
     alias(libs.plugins.module.convetions)
+    alias(libs.plugins.jreleaser)
 }
 
 group = 'io.github.lbushko.aqa.tools'
