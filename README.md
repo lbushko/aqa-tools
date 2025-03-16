@@ -1,6 +1,7 @@
 # AQA Tools
 
 [![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/apache/maven.svg?label=License)][license]
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.lbushko.aqa.tools/test-listeners.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.lbushko.aqa.tools/test-listeners)
 
 Tools for building Advanced Test Automation Frameworks
 
