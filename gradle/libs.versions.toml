@@ -2,9 +2,11 @@
 testng = "7.11.0"
 lombok = "8.4"
 jreleaser = "1.17.0"
+logback-classic = "1.5.17"
 
 [libraries]
 testng = { group = "org.testng", name = "testng", version.ref = "testng" }
+logback-classic = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback-classic" }
 
 [plugins]
 lombok = { id = "io.freefair.lombok", version.ref = "lombok" }
@@ -13,4 +15,4 @@ maven-publish = { id = "maven-publish" }
 java-library = { id = "java-library" }
 groovy-gradle-plugin = { id = "groovy-gradle-plugin" }
 module-convetions = { id = "module-conventions" }
-jreleaser = { id = "org.jreleaser", version.ref = "jreleaser"}
+jreleaser = { id = "org.jreleaser", version.ref = "jreleaser" }
