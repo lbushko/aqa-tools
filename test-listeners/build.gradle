@@ -9,4 +9,11 @@ version = '0.1.0'
 
 dependencies {
     implementation(libs.testng)
+    implementation(libs.logback.classic)
+}
+
+test {
+    useTestNG { TestNGOptions options ->
+        options.listeners << "io.github.lbushko.aqa.tools.testng.listener.CleanUpListener"
+    }
 }
